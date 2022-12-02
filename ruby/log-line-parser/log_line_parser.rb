@@ -1,5 +1,6 @@
 class LogLineParser
   def initialize(line)
+    level, line = line.split(":")
     @line = line
   end
 
@@ -8,7 +9,7 @@ class LogLineParser
   end
 
   def log_level
-    raise 'Please implement the LogLineParser#log_level method'
+    @level
   end
 
   def reformat
