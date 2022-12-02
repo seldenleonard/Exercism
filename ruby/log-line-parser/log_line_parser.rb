@@ -2,6 +2,7 @@ class LogLineParser
   def initialize(line)
     level, line = line.split(":")
     @line = line
+    @level = level
   end
 
   def message
